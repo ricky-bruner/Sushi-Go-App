@@ -40,17 +40,34 @@
 .card-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 80%;
   background-color: lightblue;
   padding: 10px;
 }
 
 .card {
-  background-color: dimgray;
+  /* background-color: dimgray; */
+  width: 265px;
+  height: 400px;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 5px;
+
+}
+
+.card-backing {
   width: 265px;
   height: 400px;
   border-radius: 15px;
+  margin: 10px;
+}
 
+.top-left-card-img {
+  display: block;
+  /* width: 15%; */
+  margin: 10px;
+  height: 40px;
 }
 
 .main-card-img {
@@ -60,8 +77,24 @@
 }
 
 .wasabi-card {
-  background-color: rgb(173, 194, 31);
-  width: 255px;
-  height: 390px;
-  border-radius: 15px;
+  background-color: rgb(244, 207, 45);
+  /* width: 255px;
+  height: 390px; */
+  /* border-radius: 15px; */
+}
+
+.sashimi-card {
+  background-color: rgb(200, 219, 62);
+}
+
+.tempura-card {
+  background-color: rgb(201, 140, 207);
+}
+
+.dumpling-card {
+  background-color: rgb(113, 162, 235);
+}
+
+.pudding-card {
+  background-color: rgb(248, 179, 182);
 }

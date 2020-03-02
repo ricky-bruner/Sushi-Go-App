@@ -1,21 +1,70 @@
-import React from 'react';
-import logo from './img/wasabi.png';
+import React, { Component } from 'react';
+import wasabi from './img/wasabi.png';
+import wasabiSingle from './img/wasabi-single.png';
+import sashimi from './img/sashimi.png';
+import sashimiSingle from './img/sashimi-single.png';
+import tempura from './img/tempura.png';
+import tempuraSingle from './img/tempura-single.png';
+import dumpling from './img/dumpling.png';
+import dumplingSingle from './img/dumpling-single.png';
+import pudding from './img/pudding.png';
+import puddingSingle from './img/pudding-single.png';
 import './App.css';
+import PlayingCard from './components/PlayingCard';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Testing</h1>
-      <div className="card-container">
-        <div className="card">
-          <div className="wasabi-card">
-            <img src={logo} className="main-card-img" alt="wasabi" />
-
-          </div>
+export default class App extends Component {
+  state = {
+    cards: [
+      {
+        name: "wasabi",
+        img: wasabi,
+        smallImg: wasabiSingle,
+        cardClass: "card wasabi-card"
+      },
+      {
+        name: "sashimi",
+        img: sashimi,
+        smallImg: sashimiSingle,
+        cardClass: "card sashimi-card"
+      },
+      {
+        name: "tempura",
+        img: tempura,
+        smallImg: tempuraSingle,
+        cardClass: "card tempura-card"
+      },
+      {
+        name: "dumpling",
+        img: dumpling,
+        smallImg: dumplingSingle,
+        cardClass: "card dumpling-card"
+      },
+      {
+        name: "pudding",
+        img: pudding,
+        smallImg: puddingSingle,
+        cardClass: "card pudding-card"
+      }
+    ]
+  };
+  
+  
+  render(){
+    return (
+      <div className="App">
+        <h1>Testing</h1>
+        <div className="card-container">
+          {/* <div className="card wasabi-card">
+              <img src={wasabiSingle} className="top-left-card-img" alt="wasabi-single" />
+              <img src={wasabi} className="main-card-img" alt="wasabi" />
+          </div> */}
+          {
+            this.state.cards.map(c => <PlayingCard cardClass={c.cardClass} img={c.img} smallImg={c.smallImg} />)
+          }
+          {/* <PlayingCard cardClass="card wasabi-card" img={wasabi} smallImg={wasabiSingle} /> */}
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
-export default App;
