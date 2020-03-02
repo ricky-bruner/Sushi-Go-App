@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.card {
+  background-color: dimgray;
+  width: 265px;
+  height: 400px;
+  border-radius: 15px;
+
+}
+
+.main-card-img {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.wasabi-card {
+  background-color: rgb(173, 194, 31);
+  width: 255px;
+  height: 390px;
+  border-radius: 15px;
+}
