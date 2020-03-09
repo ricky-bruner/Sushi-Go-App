@@ -9,6 +9,8 @@ import dumpling from './img/dumpling.png';
 import dumplingSingle from './img/dumpling-single.png';
 import pudding from './img/pudding.png';
 import puddingSingle from './img/pudding-single.png';
+import chopsticks from './img/chopsticks.png';
+import chopsticksSingle from './img/chopsticks-single.png';
 import './App.css';
 import PlayingCard from './components/PlayingCard';
 
@@ -44,6 +46,12 @@ export default class App extends Component {
         img: pudding,
         smallImg: puddingSingle,
         cardClass: "card pudding-card"
+      },
+      {
+        name: "chopsticks",
+        img: chopsticks,
+        smallImg: chopsticksSingle,
+        cardClass: "card chopsticks-card"
       }
     ]
   };
@@ -59,10 +67,11 @@ export default class App extends Component {
               <img src={wasabi} className="main-card-img" alt="wasabi" />
           </div> */}
           {
-            this.state.cards.map(c => <PlayingCard cardClass={c.cardClass} img={c.img} smallImg={c.smallImg} />)
+            this.state.cards.map(c => <PlayingCard name={c.name} cardClass={c.cardClass} img={c.img} smallImg={c.smallImg} />)
           }
           {/* <PlayingCard cardClass="card wasabi-card" img={wasabi} smallImg={wasabiSingle} /> */}
         </div>
+        <div className="conveyor-belt"></div>
       </div>
     );
   }

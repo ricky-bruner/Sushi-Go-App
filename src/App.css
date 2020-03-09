@@ -1,3 +1,44 @@
+@import url(//db.onlinewebfonts.com/c/03873aec84d163b3ee5571c3ebe7cd58?family=BadgerBold);
+
+:root {
+  --sushiFont: "BadgerBold";
+  --conveyor: url('./img/conveyorBeltFooter.png') bottom no-repeat;
+  --chopsticks: rgb(163, 216, 206);
+  --dumpling: rgb(105, 150, 206);
+  --edamame: rgb(140, 46, 125);
+  --eel: rgb(57, 50, 145);
+  --fruit: rgb(240, 127, 117);
+  --greenteaicecream: rgb(58, 160, 179);
+  --maki: rgb(212, 39, 46);
+  --menu: rgb(240, 227, 129);
+  --misosoup: rgb(27, 132, 124);
+  --nigiri: rgb(253, 200, 57);
+  --onigiri: rgb(211, 53, 148);
+  --pudding: rgb(248, 178, 181);
+  --sake: rgb(165, 76, 34);
+  --sashimi: rgb(198, 218, 61);
+  --soysauce: rgb(239, 151, 85);
+  --specialorder: radial-gradient(circle at bottom, 
+    rgb(153, 213, 198), 
+    rgb(97, 148, 202), 
+    rgb(22, 181, 171), 
+    rgb(202, 219, 71), 
+    rgb(246, 239, 106), 
+    rgb(250, 200, 67), 
+    rgb(240, 90, 50), 
+    rgb(209, 41, 45)
+  );
+  --spoon: rgb(80, 83, 82);
+  --sukeroku: rgb(187, 52, 84);
+  --takeoutbox: rgb(199, 159, 123);
+  --tea: rgb(153, 25, 30);
+  --temaki: rgb(123, 22, 100);
+  --tempura: rgb(193, 151, 197);
+  --tofu: rgb(115, 167, 64);
+  --uramaki: rgb(226, 228, 70);
+  --wasabi: rgb(253, 200, 57);
+}
+
 .App {
   text-align: center;
 }
@@ -37,6 +78,10 @@
   }
 }
 
+h1 {
+  font-family: var(--sushiFont);
+}
+
 .card-container {
   display: flex;
   justify-content: space-around;
@@ -53,6 +98,7 @@
   border-radius: 25px;
   margin: 10px;
   padding: 5px;
+  font-family: var(--sushiFont);
 
 }
 
@@ -77,24 +123,60 @@
 }
 
 .wasabi-card {
-  background-color: rgb(244, 207, 45);
-  /* width: 255px;
-  height: 390px; */
-  /* border-radius: 15px; */
+  background: 
+    linear-gradient(to bottom, var(--wasabi) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--wasabi);
 }
 
 .sashimi-card {
-  background-color: rgb(200, 219, 62);
+  background: 
+    linear-gradient(to bottom, var(--sashimi) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--sashimi);
+
 }
 
 .tempura-card {
-  background-color: rgb(201, 140, 207);
+  background: 
+    linear-gradient(to bottom, var(--tempura) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--tempura);
+
 }
 
 .dumpling-card {
-  background-color: rgb(113, 162, 235);
+  background: 
+    linear-gradient(to bottom, var(--dumpling) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--dumpling);
+
 }
 
 .pudding-card {
-  background-color: rgb(248, 179, 182);
+  background: 
+    linear-gradient(to bottom, var(--pudding) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--pudding);
+  
 }
+
+.chopsticks-card {
+  background: 
+    linear-gradient(to bottom, var(--chopsticks) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--chopsticks);
+  
+}
+
+/* .conveyor-belt {
+  width: 100%;
+  height: 400px;
+  background: 
+    repeating-radial-gradient(
+      circle,
+      grey,
+      dimgray 50px
+    );
+} */
+
