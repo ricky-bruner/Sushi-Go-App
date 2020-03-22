@@ -31,7 +31,7 @@ export default class PlayingCard extends Component {
                         </div>
                         <img src={this.props.card.img} className="main-card-img" alt="wasabi" />
                         <div className="card-footer-text">
-                            <div className="title-text">{this.props.card.name.toUpperCase()}</div>
+                            <div className="title-text">{this.props.card.name}</div>
                             <div className="modifier-text">
                                 {
                                     this.props.card.modifierText.split("|").length > 1 &&

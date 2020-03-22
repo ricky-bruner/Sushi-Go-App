@@ -2,7 +2,7 @@
 
 :root {
   --sushiFont: "BadgerBold";
-  --conveyor: url('./img/conveyorBeltFooter.png') bottom no-repeat;
+  --conveyor: url('./img/conveyor-belt-footer.png') bottom no-repeat;
   --chopsticks: rgb(163, 216, 206);
   --dumpling: rgb(105, 150, 206);
   --edamame: rgb(140, 46, 125);
@@ -18,24 +18,27 @@
   --sake: rgb(165, 76, 34);
   --sashimi: rgb(198, 218, 61);
   --soysauce: rgb(239, 151, 85);
-  --specialorder: radial-gradient(circle at bottom, 
-    rgb(153, 213, 198),  
-    rgb(153, 213, 198) 10%, 
-    rgb(97, 148, 202) 10%, 
-    rgb(97, 148, 202) 20%, 
-    rgb(22, 181, 171) 20%, 
-    rgb(22, 181, 171) 30%, 
-    rgb(202, 219, 71) 30%, 
-    rgb(202, 219, 71) 40%, 
-    rgb(246, 239, 106) 40%, 
-    rgb(246, 239, 106) 50%, 
-    rgb(250, 200, 67) 50%, 
-    rgb(250, 200, 67) 60%, 
-    rgb(240, 90, 50) 60%, 
-    rgb(240, 90, 50) 70%, 
-    rgb(209, 41, 45) 70%,
-    rgb(209, 41, 45) 80%
+  --specialorder: repeating-radial-gradient(circle at 50% 62%, 
+    rgb(178, 134, 171),
+    rgb(178, 134, 171) 35%,
+    rgb(153, 213, 198) 35%,  
+    rgb(153, 213, 198) 43.125%, 
+    rgb(97, 148, 202) 43.125%, 
+    rgb(97, 148, 202) 51.25%, 
+    rgb(22, 181, 171) 51.25%, 
+    rgb(22, 181, 171) 59.375%, 
+    rgb(202, 219, 71) 59.375%, 
+    rgb(202, 219, 71) 67.5%, 
+    rgb(246, 239, 106) 67.5%, 
+    rgb(246, 239, 106) 75.625%, 
+    rgb(250, 200, 67) 75.625%, 
+    rgb(250, 200, 67) 83.75%, 
+    rgb(240, 90, 50) 83.75%, 
+    rgb(240, 90, 50) 91.875%, 
+    rgb(209, 41, 45) 91.875%,
+    rgb(209, 41, 45) 100%
   );
+  --specialordertext: rgb(202, 219, 71);
   --spoon: rgb(80, 83, 82);
   --sukeroku: rgb(187, 52, 84);
   --takeoutbox: rgb(199, 159, 123);
@@ -202,12 +205,18 @@ h1 {
   color: var(--wasabi);
 }
 
+.fruit-card {
+  background: 
+    linear-gradient(to bottom, var(--fruit) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--fruit);
+}
+
 .sashimi-card {
   background: 
     linear-gradient(to bottom, var(--sashimi) 52%, transparent 48%),
     var(--conveyor);
   color: var(--sashimi);
-
 }
 
 .tempura-card {
@@ -226,11 +235,27 @@ h1 {
 
 }
 
+.menu-card {
+  background: 
+    linear-gradient(to bottom, var(--menu) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--menu);
+
+}
+
 .pudding-card {
   background: 
     linear-gradient(to bottom, var(--pudding) 52%, transparent 48%),
     var(--conveyor);
   color: var(--pudding);
+  
+}
+
+.greenteaicecream-card {
+  background: 
+    linear-gradient(to bottom, var(--greenteaicecream) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--greenteaicecream);
   
 }
 
@@ -256,6 +281,94 @@ h1 {
   color: var(--maki);
 }
 
+.uramaki-card {
+  background: 
+    linear-gradient(to bottom, var(--uramaki) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--uramaki);
+}
+
+.tea-card {
+  background: 
+    linear-gradient(to bottom, var(--tea) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--tea);
+}
+
+.misosoup-card {
+  background: 
+    linear-gradient(to bottom, var(--misosoup) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--misosoup);
+}
+
+.soysauce-card {
+  background: 
+    linear-gradient(to bottom, var(--soysauce) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--soysauce);
+}
+
+.spoon-card {
+  background: 
+    linear-gradient(to bottom, var(--spoon) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--spoon);
+}
+
+.specialorder-card {
+  background: var(--conveyor),
+    var(--specialorder);
+  color: var(--specialordertext);
+}
+
+.takeoutbox-card {
+  background: 
+    linear-gradient(to bottom, var(--takeoutbox) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--takeoutbox);
+}
+
+.eel-card {
+  background: 
+    linear-gradient(to bottom, var(--eel) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--eel);
+  
+}
+
+.edamame-card {
+  background: 
+    linear-gradient(to bottom, var(--edamame) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--edamame);
+  
+}
+
+.tofu-card {
+  background: 
+    linear-gradient(to bottom, var(--tofu) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--tofu);
+  
+}
+
+.temaki-card {
+  background: 
+    linear-gradient(to bottom, var(--temaki) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--temaki);
+  
+}
+
+.onigiri-card {
+  background: 
+    linear-gradient(to bottom, var(--onigiri) 52%, transparent 48%),
+    var(--conveyor);
+  color: var(--onigiri);
+  
+}
+
 .card-footer-text {
   display: flex;
   justify-content: center;
@@ -270,6 +383,7 @@ h1 {
 .title-text {
   margin-right: 5px;
   font-size: 24px;
+  text-transform: uppercase;
 }
 
 .modifier-text {
