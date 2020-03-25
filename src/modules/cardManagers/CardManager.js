@@ -55,7 +55,7 @@ export default Object.create(null, {
                     ]
                 },
                 {
-                    name: "misosoup",
+                    name: "miso soup",
                     img: AppetizersImageManager.appetizers.misosoup,
                     smallImg: AppetizersImageManager.appetizers.misosoupSingle,
                     cardClass: "card misosoup-card",
@@ -121,6 +121,36 @@ export default Object.create(null, {
                     cardClass: "card onigiri-card",
                     modifierText: "UNIQUE: 1 4 9 16",
                     modifierSubText: "",
+                    totalCount: 12,
+                    uniqueIterations: [
+                        {
+                            count: 1,
+                            smallImgCount: 1
+                        }
+                    ]
+                },
+                {
+                    name: "futomaki",
+                    img: AppetizersImageManager.appetizers.sukerokufutomaki,
+                    smallImg: AppetizersImageManager.appetizers.sukerokufutomakiSingle,
+                    cardClass: "card sukeroku-card",
+                    modifierText: "2 / 6",
+                    modifierSubText: "IF PAIRED|WITH INARI",
+                    totalCount: 12,
+                    uniqueIterations: [
+                        {
+                            count: 1,
+                            smallImgCount: 1
+                        }
+                    ]
+                },
+                {
+                    name: "inari",
+                    img: AppetizersImageManager.appetizers.sukerokuinari,
+                    smallImg: AppetizersImageManager.appetizers.sukerokuinariSingle,
+                    cardClass: "card sukeroku-card",
+                    modifierText: "2 / 6",
+                    modifierSubText: "IF PAIRED|WITH FUTOMAKI",
                     totalCount: 12,
                     uniqueIterations: [
                         {
@@ -204,6 +234,21 @@ export default Object.create(null, {
                     cardClass: "card menu-card",
                     modifierText: "",
                     modifierSubText: "DRAW 4 CARDS, PLAY 1,|RETURN THE REST",
+                    totalCount: 12,
+                    uniqueIterations: [
+                        {
+                            count: 1,
+                            smallImgCount: 1
+                        }
+                    ]
+                },
+                {
+                    name: "sake",
+                    img: SpecialsImageManager.specials.sake,
+                    smallImg: SpecialsImageManager.specials.sakeSingle,
+                    cardClass: "card sake-card",
+                    modifierText: "",
+                    modifierSubText: "NEXT HAND: CHOOSE CARD|WITHOUT LOOKING",
                     totalCount: 12,
                     uniqueIterations: [
                         {

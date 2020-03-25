@@ -16,6 +16,10 @@ import onigiritriangle from '../../img/cards/appetizers/onigiri/onigiri-triangle
 import onigiritriangleSingle from '../../img/cards/appetizers/onigiri/onigiri-triangle-single.png';
 import sashimi from '../../img/cards/appetizers/sashimi/sashimi-sized.png';
 import sashimiSingle from '../../img/cards/appetizers/sashimi/sashimi-single.png';
+import sukerokufutomaki from '../../img/cards/appetizers/sukeroku/futomaki-sized.png';
+import sukerokufutomakiSingle from '../../img/cards/appetizers/sukeroku/futomaki-single.png';
+import sukerokuinari from '../../img/cards/appetizers/sukeroku/inari-sized.png';
+import sukerokuinariSingle from '../../img/cards/appetizers/sukeroku/inari-single.png';
 import tempura from '../../img/cards/appetizers/tempura/tempura-sized.png';
 import tempuraSingle from '../../img/cards/appetizers/tempura/tempura-single.png';
 import tofu from '../../img/cards/appetizers/tofu/tofu-sized.png';
@@ -42,6 +46,10 @@ export default Object.create(null, {
             onigiritriangleSingle: onigiritriangleSingle,
             sashimi: sashimi, 
             sashimiSingle: sashimiSingle,
+            sukerokufutomaki: sukerokufutomaki,
+            sukerokufutomakiSingle: sukerokufutomakiSingle,
+            sukerokuinari: sukerokuinari,
+            sukerokuinariSingle: sukerokuinariSingle,
             tempura: tempura,
             tempuraSingle: tempuraSingle,
             tofu: tofu,

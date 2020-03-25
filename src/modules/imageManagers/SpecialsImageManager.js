@@ -2,6 +2,8 @@ import chopsticks from '../../img/cards/specials/chopsticks/chopsticks-sized.png
 import chopsticksSingle from '../../img/cards/specials/chopsticks/chopsticks-single.png';
 import menu from '../../img/cards/specials/menu/menu-sized.png';
 import menuSingle from '../../img/cards/specials/menu/menu-single.png';
+import sake from '../../img/cards/specials/sake/sake-sized.png';
+import sakeSingle from '../../img/cards/specials/sake/sake-single.png';
 import soysauce from '../../img/cards/specials/soysauce/soysauce-sized.png';
 import soysauceSingle from '../../img/cards/specials/soysauce/soysauce-single.png';
 import specialorder from '../../img/cards/specials/specialorder/specialorder-sized.png';
@@ -22,6 +24,8 @@ export default Object.create(null, {
             chopsticksSingle: chopsticksSingle,
             menu: menu,
             menuSingle: menuSingle,
+            sake: sake,
+            sakeSingle: sakeSingle,
             soysauce: soysauce,
             soysauceSingle: soysauceSingle,
             specialorder: specialorder,
